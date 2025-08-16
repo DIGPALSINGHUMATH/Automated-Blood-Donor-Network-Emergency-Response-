@@ -3,7 +3,6 @@ package com.Blood_Donor_Network.Blood.Donor.Network.Service.impt;
 import com.Blood_Donor_Network.Blood.Donor.Network.Dto.NewUserDto;
 import com.Blood_Donor_Network.Blood.Donor.Network.Dto.UserDto;
 import com.Blood_Donor_Network.Blood.Donor.Network.Entity.UserEntity;
-import com.Blood_Donor_Network.Blood.Donor.Network.Eunm.Role;
 import com.Blood_Donor_Network.Blood.Donor.Network.Repository.UserRepository;
 import com.Blood_Donor_Network.Blood.Donor.Network.Service.UserService;
 import lombok.RequiredArgsConstructor;

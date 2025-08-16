@@ -2,7 +2,6 @@ package com.Blood_Donor_Network.Blood.Donor.Network.Controler;
 
 import com.Blood_Donor_Network.Blood.Donor.Network.Dto.NewUserDto;
 import com.Blood_Donor_Network.Blood.Donor.Network.Dto.UserDto;
-import com.Blood_Donor_Network.Blood.Donor.Network.Eunm.Role;
 import com.Blood_Donor_Network.Blood.Donor.Network.Service.UserService;
 import com.Blood_Donor_Network.Blood.Donor.Network.Service.impt.UserServiceImpt;
 import jakarta.validation.Valid;
