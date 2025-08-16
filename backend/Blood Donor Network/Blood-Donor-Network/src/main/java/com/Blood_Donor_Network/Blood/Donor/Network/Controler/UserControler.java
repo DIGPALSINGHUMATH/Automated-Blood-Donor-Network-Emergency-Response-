@@ -14,6 +14,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/User")
@@ -34,8 +35,8 @@ public class UserControler {
         return ResponseEntity.status(HttpStatus.CREATED).body(userServiceImpt.NewUserCreated(newUserDto));
     }
     @PatchMapping("/{id}")
-    public  ResponseEntity<UserDto> roleUpdate(@PathVariable Long id , @RequestBody String role){
-        return  ResponseEntity.ok(userServiceImpt.upadateRole(id,role));
+    public  ResponseEntity<UserDto> roleUpdate(@PathVariable Long id , @RequestBody Map<String , Object> update){
+        return  ResponseEntity.ok(userServiceImpt.UpdatePartStudentById(id,update));
     }
 
 }

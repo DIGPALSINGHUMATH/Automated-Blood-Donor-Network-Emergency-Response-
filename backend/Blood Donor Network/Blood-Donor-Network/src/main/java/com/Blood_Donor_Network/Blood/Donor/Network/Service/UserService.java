@@ -4,6 +4,7 @@ import com.Blood_Donor_Network.Blood.Donor.Network.Dto.NewUserDto;
 import com.Blood_Donor_Network.Blood.Donor.Network.Dto.UserDto;
 
 import java.util.List;
+import java.util.Map;
 
 public interface UserService {
 
@@ -12,5 +13,7 @@ public interface UserService {
     UserDto NewUserCreated(NewUserDto newUserDto);
 
 
-    UserDto upadateRole(Long id, String role);
+
+
+    UserDto UpdatePartStudentById(Long id, Map<String, Object> update);
 }

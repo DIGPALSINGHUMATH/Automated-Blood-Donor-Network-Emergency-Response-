@@ -1,37 +1,28 @@
 package com.Blood_Donor_Network.Blood.Donor.Network.Entity;
 
-import com.Blood_Donor_Network.Blood.Donor.Network.Eunm.Role;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.NotNull;
-import lombok.Data;
+import lombok.*;
 
 @Data
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Table(name = "Users")
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long userId;
 
     private String name;
-
-
     private String email;
+    private String password;
+    private String phone;
 
-    private String phone;  // Changed from int to String to support phone number formatting
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private RoleEntity role;
 
-    private String gender;  // Follow Java convention for variable naming
-
-    private String bloodGroup;
-
-
-    private int age;
-
-    private String address;
-
-    @Enumerated(EnumType.STRING)
-    private Role role;
 
 
 
